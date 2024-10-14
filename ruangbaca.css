@@ -1,0 +1,209 @@
+body{
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #FFFFFF;
+}
+
+.navbar{
+    background: transparent;
+    margin: 0;
+    container: 70px;
+}
+
+.logo{
+    font-size: 30pt;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000000; 
+    font-family: "Poltawski Nowy", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+.menu{
+    margin: auto;
+    display: flex;
+    list-style: none;
+    padding: 0;
+
+}
+
+.menu li{
+    padding-left: 0;
+    margin-right: 10px;
+}
+
+.menu li a{
+    padding: 10px;
+    color: #080606;
+    text-decoration: none;
+    display: inline-block;
+}
+
+form {
+	width: 300px;
+	height: 44px;
+	border-radius: 0 5px 5px 0;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+    border: none;
+    background-color: #E5D9F2;
+    border-radius: 50px;
+}
+
+input {
+	all: unset;
+	font: 16px system-ui;
+	color: #121010;
+	height: 100%;
+	width: 100%;
+	padding: 6px 10px;
+}
+::placeholder {
+	color: #000000;
+	opacity: 0.7; 
+}
+button{
+	all: unset;
+	cursor: pointer;
+	width: 44px;
+    text-decoration: #DFE1EE;
+}
+
+svg{
+	color: #000000;
+	fill: currentColor;
+	width: 24px;
+	height: 24px;
+	padding: 10px;
+    border-color:rgb(17, 16, 16);
+    opacity: 2;
+}
+.hero{
+    margin-top: 50px;
+    margin-right: 0px;
+    background-color:#45424200;
+    height: 300px; 
+    width: 700px;
+    background-size: cover;
+    background-position: center;
+    color: #3e54de;
+    padding: 50px;   
+    border-radius: 0;
+}
+
+.slogan{
+    color: #DFE1EE; 
+    margin-bottom: 60px;
+}
+
+.qoutes{
+    background-size: cover;
+    background-position: center;
+    color: #19191a;
+    text-align: center;
+    padding: 50px;
+}
+
+.button {
+    background-color: #374FE2;
+    color: rgb(255, 255, 255);
+    padding: 15px 32px;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+} 
+
+.the {
+    color: #3B63ED;
+}
+
+.store {
+    color: #F5F5F5;
+    margin-left: -13px;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+.account-section {
+    display: flex;
+    align-items: center;
+}
+
+.account-icon {
+    font-size: 24px;
+    margin-right: 8px;
+}
+footer {
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.account-section {
+    display: flex;
+    align-items: end;
+}
+
+.account-icon {
+    font-size: 24px;
+    margin-right: 8px;
+}
+
+.account-text {
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+}
+
+.login-signup-section {
+    display: flex;
+    gap: 15px;
+}
+
+.login-link, .signup-link {
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+}
+
+.signup-link {
+    color: black;
+}
+
+.login-link:hover, .signup-link:hover {
+    color: #e9f1f9;
+    text-decoration: underline;
+}
+.see-more {
+    background-color: #374FE2; /* Warna latar belakang tombol */
+    color: #fff; /* Warna teks tombol */
+    padding: 10px 20px; /* Ukuran padding tombol */
+    border: none; /* Tidak ada border */
+    border-radius: 30px; /* Radius sudut tombol */
+    cursor: pointer; /* Tampilan cursor saat diarahkan ke tombol */
+}
+  
+.see-more:hover {
+    background-color: #374FE2; /* Warna latar belakang tombol saat diarahkan */
+}
