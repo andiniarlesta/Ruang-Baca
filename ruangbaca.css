@@ -97,6 +97,7 @@ svg{
 .slogan{
     color: #DFE1EE; 
     margin-bottom: 60px;
+    margin-top: 50px;
 }
 
 .qoutes{
@@ -202,10 +203,11 @@ footer {
     border: none; /* Tidak ada border */
     border-radius: 30px; /* Radius sudut tombol */
     cursor: pointer; /* Tampilan cursor saat diarahkan ke tombol */
+
 }
   
 .see-more:hover {
-    background-color: #374FE2; /* Warna latar belakang tombol saat diarahkan */
+    background-color: #042da9; /* Warna latar belakang tombol saat diarahkan */
 }
 .content{
     width:85%;
@@ -345,3 +347,6 @@ footer {
       margin: 2em 0;
     }
   }
+
+
+  

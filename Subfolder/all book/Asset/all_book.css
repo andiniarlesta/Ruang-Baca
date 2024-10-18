@@ -63,39 +63,9 @@
     cursor: pointer;
     font-size: 11pt;
     text-decoration: none;
-    color: black;
+    /* color: black; */
   }
     
-  /*Tombol navigasi carousel */
-.carousel-control-next {
-  width: 5%;
-}
-
-.carousel-control-next-icon {
-  background-color: none;
-  padding: 10px;
-  border-radius: 50px;
-}
-.carousel-control-next {
-    right: 0;
-}
-.carousel-control-next{
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  z-index: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 15%;
-  padding: 0;
-  color: #000000;
-  text-align: center;
-  background: 0 0;
-  border: 0;
-  opacity: .5;
-  transition: opacity .15s ease;
-}
 
 .container2 {
   display: flex;
@@ -111,10 +81,14 @@
     padding: 10px;
     width: 110px;
     height: 280px;
-    /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
-    align-items: left;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: tranform 0,3s;
+    align-items: center;
   }
-  
+
+  .card:hover{
+    transform: scale(1.1); /* Memperbesar elemen */
+  }
   .card img {
     width: 100%;
     height: auto;

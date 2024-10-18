@@ -74,14 +74,19 @@ button{
   width: 44px;
   text-decoration: #DFE1EE;
   
-}
+} 
+/*rekom book*/
 .card{
-  width: 17rem;
+  width: 10rem;
   margin: 20px;
+  transition: tranform 0,3s;
+}
+.card:hover{
+  transform: scale(1.1); /* Memperbesar elemen */
 }
 .card-img-top{
   margin: auto;
-  height: 20px; 
+  height: 10px; 
 }
 
 .container-form {
@@ -112,6 +117,7 @@ button{
 
 
 /* Style untuk menampilkan judul dan harga di bawah gambar buku */
+
 .carousel-caption {
   position: static;
   padding-top: 15px;
@@ -204,11 +210,16 @@ button{
   align-items: center;
   padding: 50px;
   background-color: #e0e8ff;
-  width: 50%;
+  width: 100%;
 }
 
 .author-content {
   max-width: 50%;
+}
+
+.author-content2 {
+  max-width: 50%;
+  margin-left: 50px;
 }
 
 .author-heading {
@@ -226,6 +237,12 @@ button{
   font-size: 16px;
 }
 
+.author-desc2{
+  margin-top: 20px;
+  font-size: 16px;
+  text-align: left;
+}
+
 .profile-button {
   background-color: #0066cc;
   color: #fff;
@@ -235,6 +252,9 @@ button{
   cursor: pointer;
   margin-top: 15px;
 }
+.profile-button:hover{
+  background-color: #042da9;
+}
 
 .book-promo {
   text-align: center;
@@ -243,12 +263,19 @@ button{
 .book-promo img {
   width: 300px;
   height: auto;
-  border-radius: 10px;
+  /* border-radius: 10px; */
+  align-items: left;
 }
 
 .price-highlight {
   font-size: 20px;
   color: green;
+  margin-top: 10px;
+}
+
+.price-highlight2 {
+  font-size: 20px;
+  color: rgb(202, 129, 160);
   margin-top: 10px;
 }
 
@@ -273,11 +300,6 @@ button{
   align-items: right;
   border: none;
 }
-
-/* .card-img {
-  width: 200%;
-  border-radius: 5px;
-} */
 
 .penulis{
   font-size: 10px;
