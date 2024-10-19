@@ -110,3 +110,30 @@
     margin-top: 10px;
     
   }
+  footer {
+    background-color: #7a8bbe;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 100px;
+  }
+  
+  footer p {
+    margin-bottom: 15px;
+  }
+  
+  footer ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  footer ul li {
+    display: inline;
+    margin: 0 10px;
+  }
+  
+  footer ul li a {
+    color: #fff;
+    text-decoration: none;
+  } 
+  
