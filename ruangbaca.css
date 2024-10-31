@@ -69,7 +69,7 @@ button{
 	all: unset;
 	cursor: pointer;
 	width: 44px;
-    text-decoration: #DFE1EE;
+  text-decoration: #DFE1EE;
 }
 
 svg{
@@ -78,8 +78,8 @@ svg{
 	width: 24px;
 	height: 24px;
 	padding: 10px;
-    border-color:rgb(17, 16, 16);
-    opacity: 2;
+  border-color:rgb(17, 16, 16);
+  opacity: 2;
 }
 .hero{
     margin-top: 50px;
