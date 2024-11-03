@@ -41,6 +41,15 @@ body{
   text-decoration: none;
   display: inline-block;
 }
+.dropdown{
+  margin: auto;
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+.dropdown-menu{
+  padding-left: o, 10px;
+}
 
 form {
   width: 300px;
