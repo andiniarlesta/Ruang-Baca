@@ -41,7 +41,7 @@ integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxU
      <tr class="table-danger">
             <br>
         <thead>
-        <tr>
+        <tr> 
        <table class="my-3 table table-bordered">
             <tr class="table-primary">           
             <th>No</th>
@@ -50,8 +50,10 @@ integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxU
             <th>Penerbit</th>
             <th>Tahun terbit</th>
             <th>ISBN</th>
-            <th>STOK</TH>
+            <th>Stok</th>
+            <th>Deskripsi</th>
             <th>GAMBAR</th>
+            <th>Harga</th>
             <th colspan='2'>Aksi</th>
 
         </tr>
@@ -76,7 +78,9 @@ integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxU
                 <td><?php echo $data["tahun_terbit"];   ?></td>
                 <td><?php echo $data["isbn"];   ?></td>
                 <td><?php echo $data["stok"];?> </td>
-                <td><?php echo $data["cover_buku"];?> </td>
+                <td><?php echo $data["deskripsi"]; ?></td>
+                <td><?php echo $data["cover_img"];?> </td>
+                <td><?php echo $data["harga"]; ?></td>
                 <td>
                     <a href="update.php?id_buku=<?php echo htmlspecialchars($data['id_buku']); ?>" class="btn btn-warning" role="button">Update</a>
                     <a href="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>?id_buku=<?php echo $data['id_buku']; ?>" class="btn btn-danger" role="button">Delete</a>

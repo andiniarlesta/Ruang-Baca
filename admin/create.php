@@ -27,11 +27,13 @@
         $tahun_terbit=input($_POST["tahun_terbit"]);
         $isbn=input($_POST["isbn"]);
         $stok=input($_POST["stok"]);
+        $des=input($_POST["deskripsi"]);
         $gambar = basename($_FILES['cover_img']['name']);
+        $harga = input($_POST["harga"]);
     
         //Query input menginput data kedalam tb_buku
-        $sql = "INSERT INTO tb_buku (judul, penulis, penerbit, tahun_terbit, isbn, stok, cover_img) 
-        VALUES ('$judul', '$penulis', '$penerbit', '$tahun_terbit', '$isbn', '$stok', '$gambar')";
+        $sql = "INSERT INTO tb_buku (judul, penulis, penerbit, tahun_terbit, isbn, stok, deskripsi, cover_img, harga) 
+        VALUES ('$judul', '$penulis', '$penerbit', '$tahun_terbit', '$isbn', '$stok', '$des', '$gambar', '$harga')";
         echo $sql;
 
         //Mengeksekusi/menjalankan query diatas
@@ -79,9 +81,21 @@
             <input type="text" name="stok" class="form-control" placeholder="Masukan jumlah stok" required/>
         </div>
         <div class="form-group">
+            <label>Deskripsi:</label>
+            <textarea name="deskripsi" class="form-control" placeholder="Masukan sinopsis buku" required></textarea>
+        </div>
+        <div class="class">
+            <label></label>
+        </div>
+        <div class="form-group">
             <label> Cover buku </label>
             <input type="file" name="cover_img" class="form-control" placeholder="Masukkan url gambar" require> </input>
         </div>
+        <div class="form-group">
+            <label>Harga:</label>
+            <input type="number" name="harga" class="form-control" placeholder="Masukkan harga" required/>
+        </div>
+
 
         <button type="submit" name="submit" class="btn btn-primary">Submit</button>
     </form>
