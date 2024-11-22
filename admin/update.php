@@ -1,3 +1,6 @@
+<?php
+require_once "../config/config.php";
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,81 +10,7 @@
 </head>
 <body>
 <div class="container">
-    <?php
-
-    //Include file koneksi, untuk koneksikan ke database
-    include "koneksi.php";
-
-    //Fungsi untuk mencegah inputan karakter yang tidak sesuai
-    function input($data) {
-        $data = trim($data);
-        $data = stripslashes($data);
-        $data = htmlspecialchars($data);
-        return $data;
-    }
-    //Cek apakah ada nilai yang dikirim menggunakan methos GET dengan nama id_buku
-    if (isset($_GET['id_buku'])) {
-        $id_buku=input($_GET["id_buku"]);
-
-        $sql="select * from tb_buku where id_buku=$id_buku";
-        $hasil=mysqli_query($kon,$sql);
-        $data = mysqli_fetch_assoc($hasil);
-
-
-    }
-    // $id = $_GET['id_buku'];
-
-    // $tampil = mysqli_query($koneksi,"SELECT * FROM tb_buku WHERE id_buku = $id");
-    // $data = mysqli_fetch_array($tampil);
-
-    //Cek apakah ada kiriman form dari method post
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
-
-        $judul=input($_POST["judul"]);
-        $penulis=input($_POST["penulis"]);
-        $penerbit=input($_POST["penerbit"]);
-        $tahun_terbit=input($_POST["tahun_terbit"]);
-        $isbn=input($_POST["isbn"]);
-        $stok=input($_POST["stok"]);
-        $des=input($_POST["deskripsi"]);
-        $gambar = basename($_FILES["cover_img"]["name"]);
-        $harga = input($_POST["harga"]);
-        
-
-        //Query update data pada tabel buku
-        $sql="update tb_buku set
-			judul='$judul',
-			penulis='$penulis',
-			penerbit='$penerbit',
-			tahun_terbit='$tahun_terbit',
-			isbn='$isbn',
-            stok='$stok',
-            deskripsi='$des',
-            cover_img= '$gambar',
-            harga='$harga'
-			where id_buku= '$id_buku'";
-            echo $sql;
-
-            //Mengeksekusi/menjalankan query diatas
-            $hasil=mysqli_query($kon, $sql);
-
-            // $stmt = $koneksi->prepare($sql);
-            // $stmt->bind_param("ssssssi", $judul, $penulis, $penerbit, $tahun_terbit, $isbn, $stok, $id_buku);
-            // $stmt->execute();
-    
-            //Kondisi apakah berhasil atau tidak dalam mengeksekusi query diatas
-            if ($hasil) {
-                header("Location:index.php");
-            }
-            else {
-                echo "<div class='alert alert-danger'> Data Gagal disimpan.</div>";
-    
-            }
-            
-        } 
-    ?>
     <h2>Update Data</h2>
-
 
     <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post" enctype="multipart/form-data">>
         <div class="form-group">
@@ -124,7 +53,7 @@
 
         <input type="hidden" name="id_buku" value="<?php echo $data['id_buku']; ?>" />
 
-        <button type="submit" name="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" name="updateBuku" class="btn btn-primary">Submit</button>
     </form>
 </div>
 </body>
