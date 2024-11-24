@@ -43,6 +43,15 @@ require_once "../config/config.php";
             <input type="text" name="deskripsi" class="form-control" placeholder="Masukan sinopsis buku" required value="<?= $data['deskripsi'] ?>"/>
         </div>
         <div class="form-group">
+            <label>Kategori</label>
+            <select class="form-select" name="penerbit">
+                    <option selected>--Pilih Kategori--</option>
+                    <option value="1">Fiction</option>
+                    <option value="2">Non-Fiction</option>
+                    <option value="3">Poetry</option>
+            </select>
+        </div>
+        <div class="form-group">
             <label> COVER BOOK </label>
             <input type="file" name="cover_img" class="form-control" placeholder="Masukkan url gambar" require value="<?= $data['cover_img'] ?>"/> </input>
         </div>

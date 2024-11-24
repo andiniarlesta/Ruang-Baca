@@ -41,8 +41,14 @@ require_once "../config/config.php";
             <label>Deskripsi:</label>
             <textarea name="deskripsi" class="form-control" placeholder="Masukan sinopsis buku" required></textarea>
         </div>
-        <div class="class">
-            <label></label>
+        <div class="form-group">
+            <label>Kategori</label>
+            <select class="form-select" name="penerbit">
+                    <option selected>--Pilih Kategori--</option>
+                    <option value="1">Fiction</option>
+                    <option value="2">Non-Fiction</option>
+                    <option value="3">Poetry</option>
+            </select>
         </div>
         <div class="form-group">
             <label> Cover buku </label>
