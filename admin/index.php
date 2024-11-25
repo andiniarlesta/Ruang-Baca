@@ -27,17 +27,17 @@ require_once "../config/config.php";
                 <tr>
                     <table class="my-3 table table-bordered">
                         <tr class="table-primary">
-                            <th>No</th>
-                            <th>Judul Buku</th>
-                            <th>Penulis</th>
-                            <th>Penerbit</th>
-                            <th>Tahun terbit</th>
-                            <th>ISBN</th>
-                            <th>Stok</th>
-                            <th>Deskripsi</th>
-                            <th>GAMBAR</th>
-                            <th>Harga</th>
-                            <th colspan='2'>Aksi</th>
+                            <th>No                  </th>
+                            <th>Judul Buku          </th>
+                            <th>Penulis             </th>
+                            <th>Penerbit            </th>
+                            <th>Tahun terbit        </th>
+                            <th>ISBN                </th>
+                            <th>Stok                </th>
+                            <th>Deskripsi           </th>
+                            <th>GAMBAR              </th>
+                            <th>Harga               </th>
+                            <th colspan='2'>Aksi    </th>
 
                         </tr>
             </thead>
@@ -53,19 +53,20 @@ require_once "../config/config.php";
             ?>
                 <tbody>
                     <tr>
-                        <td><?php echo $no; ?></td>
-                        <td><?php echo $data["judul"]; ?></td>
-                        <td><?php echo $data["penulis"];   ?></td>
-                        <td><?php echo $data["penerbit"];   ?></td>
-                        <td><?php echo $data["tahun_terbit"];   ?></td>
-                        <td><?php echo $data["isbn"];   ?></td>
-                        <td><?php echo $data["stok"]; ?> </td>
-                        <td><?php echo $data["deskripsi"]; ?></td>
-                        <td><?php echo $data["cover_img"]; ?> </td>
-                        <td><?php echo $data["harga"]; ?></td>
+                        <td><?php echo $no                  ; ?></td>
+                        <td><?php echo $data["judul"]       ; ?></td>
+                        <td><?php echo $data["penulis"]     ; ?></td>
+                        <td><?php echo $data["penerbit"]    ; ?></td>
+                        <td><?php echo $data["tahun_terbit"]; ?></td>
+                        <td><?php echo $data["isbn"]        ; ?></td>
+                        <td><?php echo $data["stok"]        ; ?> </td>
+                        <td><?php echo $data["deskripsi"]   ; ?></td>
+                        <td><?php echo $data["cover_img"]   ; ?> </td>
+                        <td><?php echo $data["harga"]       ; ?></td>
                         <td>
                             <a href="update.php?id_buku= 
-                        <?php echo htmlspecialchars($data['id_buku']);
+                        <?php 
+                            echo htmlspecialchars($data['id_buku']);
                         ?>"
                                 class="btn btn-warning" role="button">Update
                             </a>
